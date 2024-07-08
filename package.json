@@ -1,12 +1,6 @@
 {
     "name": "docspresso",
     "version": "0.1.6",
-    "scripts": {
-      "dev": "next dev",
-      "build": "next build",
-      "start": "next start",
-      "lint": "next lint"
-    },
     "publishConfig": {
       "registry": "https://registry.npmjs.org/"
     },
