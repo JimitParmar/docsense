@@ -1,7 +1,8 @@
 {
     "name": "docspresso",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "main": "index.js",
+    "types": "index.d.ts",
     "scripts": {
       "start": "node index.js",
       "lint": "eslint ."

@@ -22,5 +22,5 @@ function generateDocs(mainFields) {
     return mainFields;
   }
   
-  export default generateDocs;
+  module.exports = generateDocs;
   

@@ -1,6 +1,7 @@
-// docspresso.d.ts
+// src/docspresso.d.ts
 
 declare module 'docspresso' {
+
   export interface SubField {
     title: string;
     renderContent: (className?: string) => JSX.Element;
