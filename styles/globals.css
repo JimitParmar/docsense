@@ -1,0 +1,20 @@
+/* Your global styles here */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .layout {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
