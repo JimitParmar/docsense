@@ -1,5 +1,26 @@
-import Layout from './components/Layout';
-import Sidebar from './components/Sidebar';
-import { generateDocs } from './utils/generateDocs';
+// index.js
 
-export { Layout, Sidebar, generateDocs };
+/**
+ * @typedef {Object} SubField
+ * @property {string} title
+ * @property {function(string=): JSX.Element} renderContent
+ * @property {string} [className]
+ */
+
+/**
+ * @typedef {Object} MainField
+ * @property {string} title
+ * @property {SubField[]} subFields
+ */
+
+/**
+ * Generate documentation structure.
+ * @param {MainField[]} mainFields
+ * @returns {MainField[]}
+ */
+function generateDocs(mainFields) {
+    return mainFields;
+  }
+  
+  export default generateDocs;
+  
