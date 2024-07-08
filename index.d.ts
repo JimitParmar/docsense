@@ -2,7 +2,7 @@
 
 export interface SubField {
   title: string;
-  renderContent: (className?: string) => JSX.Element;
+  renderContent: (className?: string) => JSX.Element; // Ensure renderContent returns JSX.Element
   className?: string;
 }
 

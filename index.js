@@ -3,7 +3,7 @@
 /**
  * @typedef {Object} SubField
  * @property {string} title
- * @property {function(string=): JSX.Element} renderContent
+ * @property {(className?: string) => JSX.Element} renderContent
  * @property {string} [className]
  */
 
@@ -19,8 +19,7 @@
  * @returns {MainField[]}
  */
 function generateDocs(mainFields) {
-    return mainFields;
-  }
-  
-  module.exports = generateDocs;
-  
+  return mainFields;
+}
+
+module.exports = generateDocs;
