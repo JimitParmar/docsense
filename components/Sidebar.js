@@ -1,22 +1,26 @@
+// components/Sidebar.js
+
 import React from 'react';
 
-const Sidebar = ({ docs }) => {
+const Sidebar = ({ mainFields, onSubFieldClick }) => {
+  const handleSubFieldClick = (subField) => {
+    onSubFieldClick(subField);
+  };
+
   return (
-    <aside className="sidebar">
-      <ul>
-        {docs.map((mainField, index) => (
-          <li key={index}>
-            <h3>{mainField.title}</h3>
-            <ul>
-              {mainField.subFields.map((subField, subIndex) => (
-                <li key={subIndex}>
-                  <a href={`#${subField.title.replace(/\s+/g, '-').toLowerCase()}`}>{subField.title}</a>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
+    <aside >
+      {mainFields.map((mainField, index) => (
+        <div key={index}>
+          <h2>{mainField.title}</h2>
+          <ul>
+            {mainField.subFields.map((subField, subIndex) => (
+              <li key={subIndex} onClick={() => handleSubFieldClick(subField.link)}>
+                <p>{subField.title}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
     </aside>
   );
 };
